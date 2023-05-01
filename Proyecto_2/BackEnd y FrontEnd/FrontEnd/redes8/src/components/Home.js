@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Navbar from "./Navbar";
+import Navbar from "./NavbarCerberus";
 import Imagen1 from "../assets/Imagen1.gif"
 import './Home.css'
 

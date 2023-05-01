@@ -1,7 +1,7 @@
 import './EstilosAdministrador.css';
 import ImagenD from "../assets/ImagenD.gif"
 import React, { useEffect, Fragment, useState } from 'react';
-import Navbar from "./Navbar";
+import NavbarCerberus from "./NavbarCerberus";
 
 const Desarrollador = () => {
 
@@ -9,12 +9,17 @@ const Desarrollador = () => {
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        fetch('http://localhost:9000/Cerbero/BackEnd/Desarrollador')
-            .then(response => response.json())
-            .then(data => {
-                setDatos(data);
-            })
-            .catch(error => console.log(error));
+        const fetchData = async () => {
+            try {
+              const response = await fetch('http://localhost:9000/Cerbero/BackEnd/Desarrollador');
+              const data = await response.json();
+              setDatos(data);
+            } catch (error) {
+              console.log(error);
+            }
+          };
+        
+          fetchData();
     }, []);
 
     const handlePrev = () => {
@@ -27,7 +32,7 @@ const Desarrollador = () => {
 
     return (
         <Fragment>
-            <Navbar />
+            <NavbarCerberus />
             <h1 style={{ textAlign: "center" }}>Desarrollador</h1>
             <hr></hr>
             <div className="administrador-container">

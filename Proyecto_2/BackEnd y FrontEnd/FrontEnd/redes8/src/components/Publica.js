@@ -1,7 +1,7 @@
 import './EstilosLogin.css';
 import ImagenP from "../assets/ImagenP.gif"
 import React, { useEffect, Fragment, useState } from 'react';
-import Navbar from "./Navbar";
+import Navbar from "./NavbarCerberus";
 
 const Publica = () => {
     const [datos, setDatos] = useState([]);
@@ -12,14 +12,19 @@ const Publica = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
-        fetch('http://localhost:9000/Cerbero/BackEnd/Publica')
-            .then(response => response.json())
-            .then(data => {
-                setDatos(data);
-                setLoading(false);
-                setTotalNoticias(data.length);
-            })
-            .catch(error => console.log(error));
+        const fetchData = async () => {
+            try {
+              const response = await fetch('http://localhost:9000/Cerbero/BackEnd/Publica');
+              const data = await response.json();
+              setDatos(data);
+              setLoading(false);
+              setTotalNoticias(data.length);
+            } catch (error) {
+              console.log(error);
+            }
+          };
+        
+          fetchData();
     }, []);
 
     const renderNoticias = () => {

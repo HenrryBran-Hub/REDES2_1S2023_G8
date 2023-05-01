@@ -1,0 +1,58 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+/* Establecer un ancho máximo para el contenido */
+.container {
+  max-width: 800px;
+}
+
+/* Establecer un margen superior para la tabla */
+.table {
+  margin-top: 30px;
+}
+
+/* Establecer un tamaño de fuente adecuado para el contenido */
+body {
+  font-size: 16px;
+}
+
+/* Establecer un color de fondo para el encabezado */
+.navbar {
+  background-color: #007bff;
+}
+
+/* Establecer un color de texto para el encabezado */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Establecer un color de fondo y de texto para los botones */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.grafico-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.grafico-titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.titulo-grafico {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 5px;
+}
