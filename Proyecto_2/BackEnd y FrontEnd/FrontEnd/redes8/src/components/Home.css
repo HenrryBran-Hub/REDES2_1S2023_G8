@@ -1,0 +1,36 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.home-description {
+    width: 40%;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.home-image-container {
+    width: 50%;
+}
+
+.home-image {
+    max-width: 100%;
+}
+
+.circle-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .circle-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }

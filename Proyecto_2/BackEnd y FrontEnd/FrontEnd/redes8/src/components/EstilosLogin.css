@@ -1,0 +1,49 @@
+/* EstilosLogin.css */
+
+/* Estilos para las cartas */
+.card {
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Estilos para la tabla */
+.table {
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table thead th {
+    background-color: #F5F5F5;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+.table tbody td {
+    font-size: 1rem;
+    border: none;
+}
+
+/* Estilos para el texto "Loading..." */
+.form-control p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
