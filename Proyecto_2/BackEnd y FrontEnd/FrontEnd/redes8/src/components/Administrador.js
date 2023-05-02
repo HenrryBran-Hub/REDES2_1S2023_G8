@@ -11,7 +11,7 @@ const Administrador = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-              const response = await fetch('http://localhost:9000/Cerbero/BackEnd/Administrador');
+              const response = await fetch('http://3.136.26.200:9000/Cerbero/BackEnd/Administrador');
               const data = await response.json();
               setDatos(data);
             } catch (error) {

@@ -14,7 +14,7 @@ const Publica = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-              const response = await fetch('http://localhost:9000/Cerbero/BackEnd/Publica');
+              const response = await fetch('http://3.136.26.200:9000/Cerbero/BackEnd/Publica');
               const data = await response.json();
               setDatos(data);
               setLoading(false);

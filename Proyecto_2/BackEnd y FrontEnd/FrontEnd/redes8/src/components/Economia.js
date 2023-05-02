@@ -14,7 +14,7 @@ const Economia = () => {
     const [loadingtres, setLoadingtres] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:9000/Cerbero/BackEnd/EconomiaDolar')
+        fetch('http://3.136.26.200:9000/Cerbero/BackEnd/EconomiaDolar')
             .then(response => response.json())
             .then(data => {
                 const datosTransformados = data.map(data => {
@@ -30,7 +30,7 @@ const Economia = () => {
             })
             .catch(error => console.log(error));
 
-        fetch('http://localhost:9000/Cerbero/BackEnd/EconomiaEuro')
+        fetch('http://3.136.26.200:9000/Cerbero/BackEnd/EconomiaEuro')
             .then(response => response.json())
             .then(data => {
                 const datosTransformados = data.map(data => {
@@ -46,7 +46,7 @@ const Economia = () => {
             })
             .catch(error => console.log(error));
 
-        fetch('http://localhost:9000/Cerbero/BackEnd/EconomiaCerberCoin')
+        fetch('http://3.136.26.200:9000/Cerbero/BackEnd/EconomiaCerberCoin')
             .then(response => response.json())
             .then(data => {
                 const datosTransformados = data.map(data => {
